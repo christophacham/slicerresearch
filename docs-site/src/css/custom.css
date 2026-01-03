@@ -1,0 +1,142 @@
+/**
+ * Non-Planar Slicing Research - Custom Styles
+ */
+
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Algorithm code blocks */
+.language-python,
+.language-cpp {
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Math formulas in tables */
+table code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Paper links */
+.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.paper-link::before {
+  content: '📄';
+}
+
+/* Algorithm complexity badges */
+.complexity-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.complexity-badge.fast {
+  background: #d4edda;
+  color: #155724;
+}
+
+.complexity-badge.medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.complexity-badge.slow {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+[data-theme='dark'] .complexity-badge.fast {
+  background: #1e4620;
+  color: #8fd19e;
+}
+
+[data-theme='dark'] .complexity-badge.medium {
+  background: #533f03;
+  color: #ffe69c;
+}
+
+[data-theme='dark'] .complexity-badge.slow {
+  background: #4a1c24;
+  color: #f1aeb5;
+}
+
+/* Mermaid diagram tweaks */
+.mermaid {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Hero section */
+.hero--primary {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+/* Feature cards */
+.feature-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Admonition customization */
+.admonition.admonition-tip {
+  border-left-color: var(--ifm-color-primary);
+}
+
+/* Table improvements */
+table {
+  display: table;
+  width: 100%;
+}
+
+table th {
+  background: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] table th {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* Code block titles */
+.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  background: var(--ifm-color-emphasis-200) !important;
+}
+
+/* Footer */
+.footer--dark {
+  background: #1a1a2e;
+}
