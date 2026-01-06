@@ -311,6 +311,6 @@ def augment_mesh(mesh):
 
 ## Resources
 
-- [Neural Slicer Paper](../papers/recent-advances#neural-slicer)
-- [INF-3DP Paper](../papers/recent-advances#inf-3dp)
+- [Neural Slicer Paper](../papers/recent-advances#neural-slicer-2024)
+- [INF-3DP Paper](../papers/recent-advances#inf-3dp-collision-free-neural-fields-2024)
 - [Algorithm Overview](/docs/algorithms/overview)

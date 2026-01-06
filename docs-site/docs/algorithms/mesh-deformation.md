@@ -68,7 +68,7 @@ def curvislicer(mesh, theta_max=45, tau_range=(0.1, 0.4)):
 
 ---
 
-## S³-Slicer (SIGGRAPH Asia 2022 Best Paper)
+## S3-Slicer (SIGGRAPH Asia 2022 Best Paper)
 
 **Paper:** `S3_Slicer_SIGGRAPH_Asia_2022.pdf`
 

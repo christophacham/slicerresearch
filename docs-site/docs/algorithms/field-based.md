@@ -221,6 +221,6 @@ Geodesic layers naturally conform to:
 
 ## Resources
 
-- [Geodesic Distance Field Paper](../papers/core-algorithms#geodesic-distance-field)
-- [Field-Based Toolpath Fiber Paper](../papers/recent-advances#fiber-toolpaths)
+- [Geodesic Distance Field Paper](../papers/core-algorithms#geodesic-distance-field-2020)
+- [Field-Based Toolpath Fiber Paper](../papers/recent-advances#field-based-toolpath-fiber-2021)
 - [Math Foundations](/docs/resources/math-foundations)

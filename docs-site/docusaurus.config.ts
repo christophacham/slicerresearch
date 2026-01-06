@@ -35,7 +35,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/christophacham/slicerresearch/tree/master/docs-site/',
-          remarkPlugins: [],
+          remarkPlugins: [require('remark-math')],
           rehypePlugins: [],
         },
         blog: false,

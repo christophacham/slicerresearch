@@ -285,5 +285,5 @@ def hybrid_slicing(mesh, curvature_threshold=0.05):
 
 ## Resources
 
-- [Adaptive Slicing Paper](../papers/foundational#adaptive-slicing)
+- [Adaptive Slicing Paper](../papers/Adaptive_Slicing_FDM_Revisited_Hamburg_2017)
 - [Algorithm Overview](/docs/algorithms/overview)

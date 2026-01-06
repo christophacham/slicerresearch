@@ -233,5 +233,5 @@ fc.transform(vase, 'gcode', fc.GcodeControls(
 
 - [Official Documentation](https://fullcontrol.xyz/docs)
 - [GitHub Repository](https://github.com/FullControlXYZ/fullcontrol)
-- [Research Paper](/docs/papers/foundational#fullcontrol)
+- [Research Paper](/docs/papers/foundational#fullcontrol-g-code-designer-2021)
 - [Tutorial Videos](https://youtube.com/@FullControlXYZ)

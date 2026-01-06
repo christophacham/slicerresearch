@@ -188,4 +188,4 @@ Some meshes fail tetrahedralization:
 
 - [Original Paper (HAL)](https://inria.hal.science/hal-03971065v1)
 - [GitHub Repository](https://github.com/zhangty019/S3_DeformFDM)
-- [Algorithm Details](/docs/algorithms/mesh-deformation#s³-slicer)
+- [Algorithm Details](/docs/algorithms/mesh-deformation#s3-slicer-siggraph-asia-2022-best-paper)

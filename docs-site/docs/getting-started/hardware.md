@@ -99,6 +99,29 @@ G1 X50 Y50 Z10.5 U15.2 V-8.7 F3000 E1.5
 M6000 X50 Y50 Z10.5 A15 B-8 C0 E1.5
 ```
 
+## What You Can Do with Standard 3-Axis Printers
+
+With a standard **3-axis 3D printer** (such as a Bambu, Ender, or Prusa), you can perform non-planar printing by utilizing **Active-Z printing**, where the X, Y, and Z axes move simultaneously during material deposition. While these machines lack the rotating heads of 5-axis systems, they can still dramatically improve surface finish on top-facing regions.
+
+### Capabilities on Standard 3-Axis Machines
+*   **Staircase Elimination:** You can remove the "stair-stepping" artifacts that typically plague surfaces with shallow slopes (angles below 20°).
+*   **Smooth Surface Generation:** By having the nozzle follow the actual 3D contour of the model instead of flat slabs, you can achieve a "near-perfect" surface finish on curved tops.
+*   **Aerodynamic/Functional Optimization:** You can print parts like **wings or airfoils** with smooth continuous skins, which improves fluid dynamics by eliminating the turbulence caused by traditional layer steps.
+*   **Enhanced Strength:** Non-planar layers can bond multiple underlying planar layers together, potentially making the object's surface stronger.
+
+### Hardware Considerations
+To succeed on a standard 3-axis machine, the primary challenge is **collision avoidance**.
+*   **Nozzle Geometry:** You ideally need a **long, pointy nozzle** to provide clearance. Standard bulky heater blocks or fan shrouds will often collide with already-printed material if the slopes are too steep.
+*   **Angular Limits:** On a standard setup, non-planar printing is generally restricted to **low ramp angles** (typically up to 20°–30°) to prevent the flat underside of the nozzle from "gouging" or melting the part.
+
+### Recommended Test Models for Verification
+The sources suggest several benchmarks to verify if your slicer and hardware are handling non-planar moves correctly:
+
+1.  **The 5°–10° Wedge:** This is the best model for verifying the elimination of the **staircase effect**. A planar print will show clear "bricks," while a non-planar print should show a single, smooth slope.
+2.  **The Quarter Sphere / Sphere Cap:** This tests the algorithm's ability to handle **multi-faceted curves** where the Z-height changes constantly in all directions across the surface.
+3.  **The NACA Airfoil (Wing Section):** This verifies **functional smoothness**. It is a standard test for aerodynamic performance where any stair-stepping is highly visible and detrimental.
+4.  **Complex Mathematical Surface ($z = \sin x \cdot \cos y$):** Used to evaluate the slicer's ability to generate **collision-free toolpaths** across varying peaks and valleys.
+
 ## Recommended Setups by Budget
 
 | Budget | Setup | Capability |
